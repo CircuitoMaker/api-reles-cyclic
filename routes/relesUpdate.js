@@ -3,11 +3,11 @@ var router = express.Router();
 const fs = require('fs');
 const path = require('path');
 
-router.post('/',  function(req, res, next) {
+router.post('/',  function(req, res) {
   const parametros = req.body;
-  //console.log('Parâmetros recebidos:', parametros);
+  console.log('Parâmetros recebidos:', parametros);
   
-  //console.log('rele1:', req.body.rele1);
+  console.log('rele1:', req.body.rele1);
 
   let salva = {
     rele1:req.body.rele1,
